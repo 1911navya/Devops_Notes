@@ -1,0 +1,42 @@
+INTRO:
+
+Splunk is a powerful data analytics and visualization tool.
+It collects and indexes data from various sources, such as servers, applications, websites, and IoT devices. 
+It allow users to monitor, troubleshoot, and gain insights from their data through its powerful search capabilities and visualizations.
+It integrates with other tools and platforms such as AWS, Azure, ServiceNow, and more.
+
+ADVANTAGES:
+
+Real-time data analysis
+Scalability
+Customizable dashboards
+Security 
+
+
+Splunk Architecture:
+1. Data Sources: Data sources are the systems or applications that generate machine-generated data
+2. Forwarders: agents installed on the data sources. They collect and forward the data to the Splunk indexer for processing and indexing.
+3. Indexers: Indexers receive the data forwarded by the forwarders.
+4. Search Heads: They allow users to search, analyze, and visualize the indexed data. 
+
+NOTE: Try indexing up to 500MB/day for 60 days, no credit card required.  
+
+URL: https://www.splunk.com/en_us/form/sign-up.html?redirecturl=https://www.splunk.com/en_us/download.html
+
+TO WORK WITH SPLUNK:
+1. CREATE A SPLUNK ACCOUNT
+2. GO TO PRODUCTS -- > FREE TRAILS & DOWNLOADS
+3. SPLUNK ENTERPRIZE (GET MY FREE TRAIL)
+4. SELECT LINUX AND TAR FORMAT 
+
+SPLUNK SETUP:
+
+wget -O splunk-9.4.2-e3bdab203ac8-linux-amd64.tgz "https://download.splunk.com/products/splunk/releases/9.4.2/linux/splunk-9.4.2-e3bdab203ac8-linux-amd64.tgz"
+
+tar -zxvf splunk-9.4.2-e3bdab203ac8-linux-amd64.tgz
+
+cd splunk/bin/
+
+sudo ./splunk start --accept-license
+
+e3e24b9e-36f0-419d-ba1f-152f81872d43
