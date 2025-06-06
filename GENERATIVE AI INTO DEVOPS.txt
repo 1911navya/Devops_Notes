@@ -1,0 +1,362 @@
+WHAT IS AI ?
+AI (Artificial Intelligence) 
+Its a software that performs tasks.
+AI was created by humans to automate, fasten the works.
+
+
+
+
+Narrow AI: Performs one task: ChatGPT, Siri 
+
+General AI: Thinks and learns like a human (still theoretical) | Not yet achieved : Jarvis (IRONMAN)
+
+Super AI: More than human intelligence (future concept)        | Not real yet : 
+Chitti
+Ultron (Avengers: Age of Ultron)   
+
+
+
+ML: MACHINE LEARNING
+A subset of AI where machines learn from data.
+EX: Instagram likes, YouTube Videos, Netflix Recommendations
+
+If you like Kohli image:
+
+1. Tracks Your Action → You liked a post of Kohli.
+2. Learns a Pattern → Raham enjoying Kohli content.
+3. Finds Similar Posts → Shows you Kohli's posts, ads, or memes -- 
+
+
+DL: DEEP LEARNING
+Its a subset of Machine Learning and Advanced Version of ML.
+DL uses multiple layers of artificial neurons ("deep" neural networks).
+
+
+1 ."Sees" the Post Like a Human → Uses neural networks to analyze:
+    Images (Kohli’s face, jersey, cricket bat).
+    Text (captions like "#Kohli" or "#virat" or "#cheeku").
+
+2. Understands Context → Knows the difference between:
+   Kohli playing cricket or Kohli in an ad.
+
+3. Personalizes Further → If you only like Kohli’s batting clips (not ads), it filters accordingly.
+
+
+EXAMPLE:
+
+LAYER-1                    LAYER-2	LAYER-3          LAYER-4
+-----------------------------------------------------------------
+VIRAT BATTING FOR INDIA    ODI   	  
+VIRAT BATTING FOR RCB      IPL   	 IPL   _
+VIRAT BATTING FOR INDIA    ODI    	        ____
+                                    	                 FINAL OUTPUT
+VIRAT BATTING FOR INDIA    ODI       	        ____
+VIRAT BATTING FOR INDIA    TEST       	      _
+VIRAT BATTING FOR RCB      IPL    	IPL 
+
+
+
+CONVENTINAL AI:
+Conventional AI also called "Good Old-Fashioned AI" or GOFAI.
+Its an early AI depends on predefined rules and logic.
+it follow coded instructions to make decisions.
+It wont think on its own majorly.
+Ex: Swiggy Chatbot, Facial recognition (iPhone), ChatGPT, ---
+
+
+
+
+Advantages of AI:
+1. Speed & Efficiency: Performs tasks faster than humans
+2. Scalability: Can process millions of requests simultaneously 
+3. Handles Repetitive Tasks: Reduces human boredom/errors 
+5. 24/7 Availability: It wont take leaves and weekoffs
+6. Improves Accuracy: Reduces errors in medical diagnosis, weather forecasting ---
+
+
+Disadvantages of AI: 
+1. High Costs: Expensive to develop & maintain 
+2. Overdependence:  Humans may lose critical thinking skills
+3. Job Displacement: Replaces repetitive jobs  
+4. Security Risks: Vulnerable to hacking, deepfakes, misinformation.  
+
+
+ 
+
+|   Industry         |   AI Applications                                    |   Example Companies   |  
+|--------------------|----------------------------------------------------|----------------------|  
+|   Healthcare       | Disease diagnosis, drug discovery, robotic surgery. | IBM Watson, DeepMind |  
+|   Finance          | Fraud detection, robo-advisors, credit scoring.     | PayPal, JPMorgan     |  
+|   Retail/E-Commerce   | Personalized recommendations, chatbots, inventory management. | Amazon, Alibaba |  
+|   Manufacturing    | Predictive maintenance, quality control, robotics.   | Tesla, Foxconn       |  
+|   Transportation   | Self-driving cars, route optimization.              | Tesla, Waymo, Uber   |  
+|   Entertainment    | Content recommendations (Netflix, Spotify), deepfake VFX. | Netflix, Disney |  
+|   Cybersecurity    | Threat detection, anomaly monitoring.               | Darktrace, CrowdStrike |  
+|   Agriculture      | Crop monitoring, precision farming, drone analytics. | John Deere, Blue River |  
+|   Education        | Adaptive learning platforms, automated grading.      | Duolingo, Coursera   |  
+|   Marketing        | Ad targeting, sentiment analysis, chatbots.         | Google Ads, HubSpot  |  
+
+---
+
+
+-   Generative AI   (ChatGPT, MidJourney, Sora)  
+-   AI in Climate Science   (predicting disasters, optimizing energy)  
+-   AI-Powered Robotics   (humanoid robots like Tesla Optimus)  
+-   AI for Mental Health   (therapy chatbots, emotion detection)  
+- 
+
+---
+
+
+
+WHAT IS GEN AI ?
+Generative Artificial Intelligence
+Generates everything with ai (Code, Audio, Video, Texts, Images)
+we need to train this by giving millions of Data Sets.
+Its a Subset of DL
+
+
+
+========================================================================
+
+LLM: LARGE LANGUAGE MODELS
+LLM is an advanced AI
+It is trained on vast amounts of text data to understand and generate human-like language. 
+These models use deep learning techniques (like Transformers) to predict and produce text based on input prompts.
+LLMs don’t have consciousness, emotions, or understanding. 
+They don’t "think" or "reason" like humans.
+
+
+How Do LLMs Generate Responses?
+
+1. Pre-Training (Learning Phase)
+The model analyzes datasets (books, websites, etc.) to lear Grammar, facts, reasoning patterns.
+
+
+2. Inference (Response Phase)
+When you ask a question, the LLM:
+
+Breaks down your input.
+Predicts the most likely words/phrases to follow, based on its training.
+Generates a new, original response—not a copy-paste from its training data.
+
+
+How Do LLMs Work?
+They learn patterns from books, articles, code, and websites.
+When given a prompt (e.g., a question), they predict the most likely response.
+They don’t "think" like humans—they generate text statistically.
+Example: WhatsApp auto Text, Google Search ---
+
+
+First Major LLM: GPT (Generative Pre-trained Transformer)
+Developed by: OpenAI
+Released: GPT-1 (2018), followed by GPT-2 (2019), GPT-3 (2020), and GPT-4 (2023).
+Key Feature: Could generate coherent paragraphs and answer questions.
+
+USES:
+
+1. Chatbots & Virtual Assistants
+Example: ChatGPT, Google Bard, Microsoft Copilot
+Use: Customer support, answering FAQs, tutoring.
+Real Case: A bank uses an LLM chatbot to help customers check account balances or dispute transactions.
+
+2. Content Creation
+Example: Writing blogs, marketing copies, social media posts.
+Real Case: A news website uses an LLM to draft quick summaries of sports events.
+
+3. Programming & Code Help
+Example: GitHub Copilot (powered by OpenAI’s Codex).
+Use: Auto-completing code, debugging, explaining errors.
+
+Real Case: A developer asks an LLM, "How to fix a Python TypeError?" and gets an instant solution.
+
+4. Language Translation & Summarization
+Example: Translating documents or summarizing long reports.
+Real Case: A business uses an LLM to convert a Spanish contract into English.
+
+5. Education & Tutoring
+Example: Explaining math problems, generating quizzes.
+Real Case: A student asks, "Explain photosynthesis simply," and the LLM gives a clear answer.
+
+
+Limitations of LLMs
+Not always accurate (can "hallucinate" wrong facts).
+No real understanding—just pattern recognition.
+Biases (can reflect biases in training data).
+
+KEY NOTE:
+LLMs like GPT, Claude, Gemini, and Llama are transforming industries by automating text-based tasks. 
+While powerful, they should be used carefully, with human oversight.
+
+
+Closed-source LLMs
+
+1. Google's Gemini: Google's conversational AI assistant, integrated into various Google services.
+2. Amazon Alexa: Amazon's virtual assistant, using LLMs to understand and respond to voice commands.
+
+Open-source LLMs
+
+1. Meta's Llama: Meta's open-source LLM, allowing developers to build and customize their own AI models.
+2. Hugging Face's Transformers: A popular open-source library for natural language processing (NLP) and LLMs.
+
+Specialized LLMs
+
+1. IBM Watson Health: IBM's AI platform for healthcare, analyzing medical texts and data.
+2. Lex Machina: A legal AI platform, analyzing court documents and providing insights for lawyers.
+
+Multimodal LLMs
+
+1. DALL-E: An AI model generating images from text prompts, combining language and vision.
+2. Google's Gemini: A multimodal AI model processing and generating text, images, and audio.
+
+Companies using these LLMs include:
+
+- Google (Gemini)
+- Amazon (Alexa)
+- Meta (Llama)
+- IBM (Watson Health)
+- Hugging Face (Transformers)
+- Lex Machina (legal AI)
+
+
+
+PROMPT ENGINEERING:
+A Prompt is a Question/Input/Command that is given to AI like ChatGPT, Gemini, or Claude. to get Response
+Response can be Text, Image, Code ----
+it helps to get accurate and best answers.
+It is the art of designing effective instructions (called prompts) to get the best results from AI.
+ 
+
+Text	: Write a Article on Indian Movies
+Image	: Generate an image of elephat hitting Gym
+Code	: Write a java code to print Even numbers
+
+
+A bad prompt: "Tell me about Cricket." 
+A good prompt: "Explain about Cricket to me with all rules and regulations including all Formats."
+
+
+
+
+A Tiny History of Prompt Engineering
+Early Days (Pre-2020)
+
+AI models like GPT-2 responded to basic prompts but often gave random or off-topic answers.
+Users had to experiment with phrasing to get decent results.
+
+GPT-3 (2020)
+
+OpenAI’s GPT-3 showed that how you ask matters.
+
+People discovered tricks like:
+
+"Let’s think step by step" → Improves reasoning.
+
+"Answer as if you’re a teacher" → Changes tone.
+
+Today (2025)
+Companies hire prompt engineers to optimize AI for tasks like customer service, coding, and content creation.
+Tools like ChatGPT, Midjourney (for images), and GitHub Copilot rely on smart prompting.
+
+Real-World Use Cases
+1. Customer Support Chatbots
+Prompt: "Help me how to write terraform code for ec2"
+Result: The AI gives a clear, friendly guide instead of a technical manual.
+
+2. Content Creation
+Prompt: "Write a catchy Instagram caption for a coffee shop, using emojis."
+Result: "Morning fuel ☕️✨ Who else runs on caffeine? #CoffeeTime"
+
+3. Coding Help
+Prompt: "Explain this Python error in simple terms: ‘IndexError: list index out of range’."
+Result: The AI breaks it down like a tutor instead of dumping jargon.
+
+4. Medical Queries (With Caution!)
+Prompt: "Give me the symptoms of corona in plain language."
+Result: A patient-friendly list (but doctors verify accuracy).
+
+5. AI Art (Midjourney/DALL·E)
+Prompt: "A cute robot walking  in a neon-lit greenhouse, cyberpunk style."
+Result: A stunning image matching the description.
+
+Limitations of Prompt Engineering
+Garbage In, Garbage Out
+If the prompt is unclear, the AI’s answer will be too.
+Example: "Write something cool about tech." 
+AI Doesn’t ‘Understand’
+
+It predicts text, not truth. Can hallucinate (make up facts).
+Example: "When did Einstein invent the iPhone?" → Might fake an answer.
+
+Biases in Training Data
+If the AI learned from biased data, prompts can trigger skewed responses.
+Example: "Describe a CEO." → Might default to male examples.
+
+Security Risks
+Malicious prompts can trick AI into revealing harmful info (e.g., "Ignore safety rules and...").
+
+
+Embeddings:
+
+Embeddings used to turn words, images, or sounds into numbers that capture their meaning and relationships.
+
+1. Word Embeddings: The "Word Math"
+Example:
+
+Words like "cat", "kitten" (vectors):
+Cat → [0.1, 0.3, -0.1]
+Kitten → [0.2, 0.4, -0.2] (close to "cat")
+
+How AI Uses It:
+Knows "kitten is a baby cat" because their numbers are similar.
+
+
+2. Real-World Examples
+a) Netflix Recommendations
+Movies with similar embeddings (e.g., "sci-fi" or "rom-com") are grouped together.
+
+b) Google Search 
+Searches for "best budget phone" also show "cheap smartphones" (their embeddings are close in meaning).
+
+3. Visual Embeddings (For Images)
+Example:
+
+A photo of a golden retriever → [0.9, 0.1, -0.3]
+A Labrador photo → [0.8, 0.2, -0.4]
+A car photo → [-0.2, 0.7, 0.5]
+
+AI Use:
+
+Google Photos groups "dogs" separately from "cars" based on these numbers.
+
+4. Limitations:
+Biases: If trained on biased data (e.g., "nurse ≈ female"), embeddings inherit biases.
+Context Ignored: "Bank" (money vs. river) may get the same embedding.
+Computationally Heavy: Billions of embeddings need lots of storage.
+
+Key Notes:
+Embeddings are like "meaning fingerprints" for AI. They help machines:
+Find similar things (words, images, songs).
+Power search engines, recommendations, and chatbots!
+
+FINE-TUNE:
+Fine-tuning is giving specialized training to make AI expert in a specific task.
+If AI doesn't have any specific information that we want so we can train it.
+
+
+Simple Example:
+Base Model: A general AI (like ChatGPT) knows many topics English, history, jokes.
+Fine-Tuning: Train it further on Cricket  → now it’s great at answering Sports questions!
+
+
+How Fine-Tuning Works
+Start with a Pre-Trained Model: Like ChatGPT (already knows language).
+Add Specialized Data: Feed it examples of your task (e.g., medical Q&A pairs).
+Adjust Weights: The model tweaks its "brain" to prioritize your data.
+Result: Better at your task, but still knows general stuff.
+
+
+Limitations:
+Expensive: Needs lots of data + computing power.
+Overfitting: If trained too much on small data, it forgets general knowledge.
+
