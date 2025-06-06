@@ -1,0 +1,64 @@
+USER MANAGEMENT:
+root user is admin for the server
+he will have complete access
+Apart from root user every user is called as non root user.
+when non root user is working we need to give sudo command.
+
+
+useradd	raham	: to create a user
+passwd raham	: to set password
+su - raham	: login to raham user
+
+sudo yum install git -y
+raham is not in the sudoers file.  This incident will be reported.
+
+ctlr d (logout)
+
+visudo -- > 100 -- > yy p -- > raham -- > :wq
+
+
+=====================================================================
+
+FILE PERMISSIONS:
+
+
+-rw-r--r-- 1 root root  504 May 12 05:56 dep.yml
+
+TYPE OF FILES:
+b	: Blocked File
+c	: Character File
+d	: Directory
+-	: Regular file
+l	: link file
+
+
+PERMISSION  PART:
+rw-     r--     r--
+user	group	others
+6       4       4
+
+r	: read 		: 4
+w	: write		: 2
+x	: executable 	: 1
+
+
+Numerical   : chmod 760 dep.yml 
+Alphabetical: chmod u=rwx,g=rwx,o=rwx dep.yml 
+
+OWNERSHIP CHANGING:
+chown raham:raham sc.yml
+
+GROUPS:
+NOTE: WHEN WE CREATE USER -- > A GROUP AND A FOLDER WILL CREATE BY DEFAULT
+
+cat /etc/passwd		: to check list of users
+getent passwd		: to check list of users
+cat /etc/group		: to check list of groups
+getent group		: to check list of groups
+
+useradd user		: to create sunny user
+groupadd devops		: to create devops group
+usermod -aG devops sunny: to add sunny user to devops
+id sunny		: to get sunny info
+userdel sunny		: to delete sunny user
+groupdel devops		: to delete devops group
