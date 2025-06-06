@@ -1,0 +1,120 @@
+INTRO:
+ArgoCD is a declarative continuous delivery tool for Kubernetes.
+ArgoCD is the core component of Argo Project.
+It helps to automate the deployment and management of applications in a K8s cluster.
+It uses GitOps methodology to manage the application lifecycle and provides a simple and intuitive UI to monitor the application state, rollout changes, and rollbacks.
+
+in GitHub we put k8s manifest file and that file is going to execute by argocd in k8s cluster.
+
+ArgoCD will continuously monitor the Git repository for changes and automatically apply them to the Kubernetes cluster.
+
+ArgoCD also provides advanced features like application health monitoring, automated drift detection, and support for multiple environments such as production, staging, and development.
+
+It is a popular tool among DevOps teams who want to streamline their Kubernetes application deployment process and ensure consistency and reliability in their infrastructure.
+
+
+BULLET POINTS:
+its a continuous delivery tool for Kubernetes.
+automate the deployment of applications in a K8s cluster.
+it uses GitOps methodology (GitOps = Git + Operations)
+in GitHub we put k8s manifest file and that file is going to execute by argocd in k8s cluster.
+If argocd find any changes in GitHub it will automatically applies to cluster.
+
+
+
+STEP-1:
+CREATE CLUSTER USING KOPS
+
+STEP-2:
+INSTALL HELM:
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+chmod 700 get_helm.sh
+./get_helm.sh
+helm version
+
+STEP-3:
+INSTALL ARGO CD USING HELM
+helm repo add argo-cd https://argoproj.github.io/argo-helm
+helm repo update
+kubectl create namespace argocd
+helm install argocd argo-cd/argo-cd -n argocd
+kubectl get all -n argocd
+
+
+
+EXPOSE ARGOCD SERVER:
+kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
+kubectl get all -n argocd
+
+
+COPY PASTE DNS TO BROWSER
+ADVANCE
+LOGIN PAGE
+
+username: admin
+passowd:
+
+TO GET ARGO CD PASSWORD:
+
+kubectl -n argocd get secret argocd-initial-admin-secret -o yaml
+decode the above secret (echo -n "data" | base64 -d)
+
+
+The above command to provide password to access argo cd
+
+IN REAL FOR DEV &TEST ENV WE CAN USE 100% AUTOMATED DEPLOYENTS
+FOR PRODUCTION WE PERFER SEMI-AUTOMATED.
+ 
+
+NEW APP
+NAME: APP1
+PROJECT NAME: default
+Sync Policy: Manual
+REPO: https://github.com/devopsbyraham/argocd.git
+PATH: ./
+CLUSTER URL: https://kubernetes.default.svc
+NAMESPACE: default
+CREATE
+
+SYNC
+SYNCHRONIZE
+
+
+MICROSERVICE PROJECT:
+Q: TELL ME ABOUT YOUR CURRENT PROJECT YOU ARE WORKING ON ?
+INTRO: THANKS FOR GIVING THE OPPURTUNITY TO EXPLAIN MY PROJECT.
+
+1. IN MY COMPANY WE USE MICROSERVICE ARCHITECTURE FOR OUR PROJECT.
+2. OUR REAL TIME WORK AS A DEVOPS ENGINEER WILL START WITH CREATING CLUSTER.
+3. FOR INFRA CREATION WE USE TERRAFORM/EKS/KOPS IN OUR COMPANY.
+4. WE USE MODULES TO CREATE 3 TIER ARCHITECTURE IN AWS CLOUD.
+
+5. ONCE CLUSTER GOT CREATED WE CONFIGURE THE CLUSTER.
+6. WE INSTALL CNI, INGRESS, METRIC SERVER, OIDC -----
+7. WE TEST CLUSTER IS WORKING OR NOT BY CREATION SOME DEMO PODS.
+
+8. OUR DEV WILL PUSH THE CODE TO GITHUB WE INTEGRATE CODE FROM GITHUB TO JENKINS/ARGOCD
+9. IN JENKINS WE DO CI (BUILD + TEST) AS RESULT WE GET IMAGE
+10. WE STORE IMAGE DOCKER HUB.
+11. WE RUN THE PIPELINE/ARGOCD THAT WILL DEPLOY THE APP AUTOMATICALLY TO THE CLUSTER.
+12. AFTER DEV NS WE DEPLOY ON TEST AND UAT IF EVERY THING IS FINE WE DEPLOY THE APP TO PROD.
+
+PIPELINE FLOW:
+CODE -- > BUILD -- > TEST -- > SONARQUBE -- > GATEQUALITY  -- > OWASP -- > TRIVY -- > BUILD -- > TAG & PUSH TO DOCKERHUB  -- > SLACK NOITFY
+GITHUB (MANIFEST) -- > ARGOCD -- > DEPLOY TO CLUSTER
+
+13. AFTER DEPLOYING THE APP WE VERIFY THE APP IS RUUNING OR NOT FROM ELB DNS.
+14. FINALLY ONCE EVERYTHING IS DONE WE MONITOR THE SERVERS FROM GRAFANA.
+
+TOOLS:
+CLOUD        : AWS
+INFRA        : TERRAFORM/EKS/KOPS
+CODE        : GIT & GITHUB
+CI        : JENKINS
+CD        : ARGOCD
+PACKAGE MANAGER : HELM
+MONITORING     : PROMETHEUS & GARFANA
+APP SERVER    : TOMCAT
+NOTIFICATIN    : SLACK
+CODE QUALITY    : SONARQUBE
+IMAGE SCAN    : TRIVY
