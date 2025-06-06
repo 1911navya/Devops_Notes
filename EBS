@@ -1,0 +1,39 @@
+ELASTIC BEAN STALK:
+Its a service for deploying and scaling web applications
+We can deplpy Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker.
+familiar servers such as Apache, Nginx, Passenger, and IIS.
+It is free service.
+There’s no additional charge for Elastic Beanstalk.
+You pay for resources that we create to store and run your web application, like S3 buckets and  EC2 instances.
+BTS it will use CFT to create Infra.
+
+STEP-1:
+Elastic Beanstalk -- > Create Application -- >
+Web server environment -- > Domain -- > Platform : NodeJs -- > Upload code from s3-- > Single instance -- > NEXT
+
+
+git clone https://github.com/RAHAMSHAIK007/awsnodejs-ebs.git
+
+STEP-2:
+CREATE ROLES -- > KEYPAIR -- > NEXT
+
+STEP-3:
+VPC -- > Public IP address ACTIVATE -- > SUBNETS -- > NEXT
+
+STEP-4:
+GP : 20 -- > IMDSv1 : ACTIVE -- > ELB -- > NEXT
+
+STEP-5:
+BASIC  -- > Managed updates (Deactivate)    
+
+CODE PIPELINE
+CREATE PIPELINE
+CUSTOM PIPELINE
+Pipeline name: PIPELINE-1
+Source provider: GitHub (via-GitHub app)
+connect to your GitHub
+Select repo
+Branch: Main
+Command: echo "hai"
+skip test stage
+Deploy provider: elastic beanstalk
